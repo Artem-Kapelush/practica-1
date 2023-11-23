@@ -8,8 +8,55 @@
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+	<style>
+		@media screen and (max-width: 768px) {
+			.title {
+				padding: 30px 0px 5px 5px;
+			}
+			.section {
+				height: 250px;
+				margin-top: 5px;
+			}
+			.section:nth-child(3) {
+				padding-right: 0;
+				flex-direction: row;
+			}
+			.img {
+				width: 50%;
+			}
+			.text {
+				width: 49%;
+			}
+		}
+		@media screen and (max-width: 375px) {
+			.title {
+				font-size: 60px;
+				padding: 30px 0px 10px 5px;
+			}
+			.section {
+				height: 1050px;
+				margin-top: 10px;
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.section:nth-child(3) {
+				padding-right: 0;
+				flex-direction: row;
+			}
+			.img {
+				width: 100%;
+			}
+			.text {
+				padding-top: 40px;
+				padding-right: 0;
+				padding-left: 0;
+				width: 100%;
+				font-size: 40px;
+			}
+		}
+	</style>
 	<div class="container">
-			<h1 class="title">Що потрібно знати веб-розробнику?</h1>
+		<h1 class="title">Що потрібно знати веб-розробнику?</h1>
 		<section class="section" id="html">
 			<img src="img/html.jpg" alt="" class="img">
 			<p class="text"><span class="span_1">HTML (англ. HyperText Markup Language — мова розмітки гіпертексту)</span> — це мова тегів, засобами якої здійснюється розмітка веб-сторінок для мережі Інтернет. Браузери отримують HTML-документи з веб-сервера або з локальної пам'яті й передають документи в мультимедійні веб-сторінки. HTML описує структуру веб-сторінки семантично і початково підказки для відображення документа.</p>
